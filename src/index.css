@@ -45,6 +45,7 @@ body{
 
 .container {
     width: var(--container-width-lg);
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -95,7 +96,7 @@ a:hover{
 
 .btn:hover {
     background: var(--color-white);
-    color: var(--color-bg1);
+    color: var(--color-bg);
     border-color: transparent;
 
 }
@@ -105,10 +106,72 @@ a:hover{
     color: var(--color-bg);
 }
 
-.img {
+img {
     display: block;
     width: 100%;
     object-fit: cover;
 }
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */ 
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+
+    .section {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    .section > h2{
+        margin-top: 2rem;
+    }
+}
+
+/* ===================== CTA ===================== */ 
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex ;
+    gap: 1.2rem ;
+    justify-content: center;
+}
+
+
+/* ===================== SOCIALS ===================== */ 
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ===================== ME ===================== */ 
+
+.me{
+    background: linear-gradient(var(--color-primary), transparent) ;
+    width: 22rem ;
+    height: 30rem ;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0  0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+
+}
