@@ -7,9 +7,9 @@ import {FaTwitterSquare} from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>GTNI</a>
+      <a href="/" className='footer__logo'>IGNT</a>
       <ul className="permalinks">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experiences">Experiences</a></li>
         <li><a href="#services">Services</a></li>
@@ -24,7 +24,7 @@ const Footer = () => {
 
       </div>
       <div className="footer__copyright">
-        <small>&copy; GTNI Sites. All Rights REserved</small>
+        <small>&copy; IGTN Sites. All Rights REserved</small>
       </div>
     </footer>
   )

@@ -36,6 +36,12 @@
     display: inline-block;
 }
 
+#resultado {
+    background: transparent;
+    margin-bottom: 45px;
+    height: 34px;
+    border: 1px solid red;
+}
 /*============== FORM  ============== */
 
 form {
